@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Dasar</title>
+</head>
+<body>
+  <h1>Kalkulator Dasar</h1>
+  <script>
+    let tambah = (x, y) => x + y;
+    let kurang = (x, y) => x - y;
+    let kali = (x, y) => x * y;
+    let bagi = (x, y) => {
+      if (y == 0) return "Error: Pembagian dengan nol!";
+      else return x / y;
+    };
+
+    let pilihan = prompt(`Pilih operasi:
+      1. Tambah
+      2. Kurang
+      3. Kali
+      4. Bagi
+      Masukkan pilihan (1/2/3/4):`);
+    let num1 = parseFloat(prompt("Masukkan angka pertama:"));
+    let num2 = parseFloat(prompt("Masukkan angka kedua:"))
+
+    switch (pilihan) {
+      case '1':
+        alert(`${num1} + ${num2} = ${tambah(num1, num2)}`);
+        break;
+      case '2
+    
