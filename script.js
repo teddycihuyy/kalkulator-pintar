@@ -2,19 +2,19 @@ let tambah = (x, y) => x + y;
 let kurang = (x, y) => x - y;
 let kali = (x, y) => x * y;
 let bagi = (x, y) => {
-    if (y == 0) return "Error: Pembagian dengan nol!";
+    if (y == 0) return "Error: goblok, mana bisa dibagi nol";
     else return x / y;
 };
 
-let pilihan = prompt(`Pilih operasi:
+let pilihan = prompt(`lu pilih mau pake yg mana:
 1. Tambah
 2. Kurang
 3. Kali
 4. Bagi
-Masukkan pilihan (1/2/3/4):`);
+Masukkin pilihan lu (1/2/3/4):`);
 
-let num1 = parseFloat(prompt("Masukkan angka pertama:"));
-let num2 = parseFloat(prompt("Masukkan angka kedua:"))
+let num1 = parseFloat(prompt("Masukkin angka pertama:"));
+let num2 = parseFloat(prompt("Masukkin angka kedua:"))
 
 switch (pilihan) {
     case '1':
@@ -30,5 +30,5 @@ switch (pilihan) {
         alert(`${num1} / ${num2} = ${bagi(num1, num2)}`);
         break;
     default:
-        alert("Pilihan tidak valid");
+        alert("Pilih yg bener tolol");
 }
